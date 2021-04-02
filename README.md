@@ -7,7 +7,7 @@ provider "google" {}
 data "google_client_config" "current" {}
 
 module "filestore" {
-    source  = "rojopolis/filestore/google""
+    source  = "./filestore/google""
     instance_id = "testing"
     project = "${data.google_client_config.current.project}"
     location = "us-west1-b"
