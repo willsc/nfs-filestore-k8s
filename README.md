@@ -10,7 +10,7 @@ module "filestore" {
     source  = "./filestore/google""
     instance_id = "testing"
     project = "${data.google_client_config.current.project}"
-    location = "us-west1-b"
+    location = "europe-west2-a"
     file_share = {
         capacity = "1TB"
         name     = "testing1"
